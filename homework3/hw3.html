@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опис селекторів</title>
+  <style>
+    body {
+    background-color: lightgray;
+    color: black;
+  }
+    /* Простий селектор за назвою елемента */
+    p {
+      color: blue;
+    }
+
+    /* Селектор за id */
+    #special-text {
+      color: red;
+    }
+
+    /* Селектор за класом */
+    .highlight {
+      background-color: yellow;
+    }
+
+    /* Селектор за кількома класами */
+    .important.text {
+      font-weight: bold;
+    }
+
+    /* Селектор за вкладеністю */
+    div p {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <h1>Селектори</h1>
+  <p>Селектори в CSS дозволяють вибирати та стилізувати вибрані елементи на сторінці.</p>
+  <p id="special-text">Цей текст має особливий id.</p>
+  <p class="highlight">Цей текст виділений класом "highlight".</p>
+  <p class="important text">Цей текст має два класи: "important" і "text".</p>
+  <div>
+    <p>Цей текст має батьківський елемент &lt;div&gt;.</p>
+  </div>
+</body>
+</html>
