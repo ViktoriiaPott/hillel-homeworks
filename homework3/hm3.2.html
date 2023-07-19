@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приклади селекторів</title>
+    <style>
+        body {
+    background-color: lightgray;
+    color: black;
+  }
+      /* Селектор за назвою елемента */
+      p {
+        color: blue;
+      }
+  
+      /* Селектор за id */
+      #special-text {
+        color: red;
+      }
+  
+      /* Селектор за класом */
+      .highlight {
+        background-color: yellow;
+      }
+  
+      /* Селектор за кількома класами */
+      .important.text {
+        font-weight: bold;
+      }
+  
+      /* Селектор за вкладеністю */
+      div p {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Приклади селекторів</h1>
+    <p>Селектори дозволяють стилізувати різні елементи сторінки.</p>
+    
+    <!-- Приклади елементів з використанням різних селекторів -->
+    <p>Цей текст застилізований за допомогою селектора за назвою елемента (p).</p>
+    <p id="special-text">Цей текст має особливий id і стилізований за допомогою селектора за id (#special-text).</p>
+    <p class="highlight">Цей текст виділений класом "highlight" і стилізований за допомогою селектора за класом (.highlight).</p>
+    <p class="important text">Цей текст має два класи: "important" і "text", і стилізований за допомогою селектора за кількома класами (.important.text).</p>
+    <div>
+      <p>Цей текст має батьківський елемент &lt;div&gt;, і стилізований за допомогою селектора (div p).</p>
+    </div>
+  </body>
+  </html>
