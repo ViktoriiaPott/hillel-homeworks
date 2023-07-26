@@ -1,49 +1,45 @@
-/* Розділіть картки на 3 в рядок та 3 в стовпчик */
-
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
+  background-color: #fff8f8;
 }
 
 .card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px; /* Відстань між рядками карток */
+  text-align: center;
   padding: 30px;
-  margin: 0 20px; /* Зовнішній відступ зліва та справа */
+  margin: 30px;
 }
 
 .row {
-  display: flex;
-  justify-content: center; /* Центрування карток в рядку */
-  width: 960px; /* Розділіть ряд на 3 колонки, по 300px кожна */
-  margin-left: 200px; /* Відступ від початку лівого краю екрана для першого стовпчика */
-  margin-right: 50px;
-  margin-bottom: 20px;
+  font-size: 0;
+  margin-bottom: 60px;
 }
 
-/* Відступи між картками в ряду */
-.row .card:not(:last-child) {
+.row .card {
+  background-color: rgba(241, 221, 104, 0.493);
+  box-shadow: #29170281 0px 2px 5px 0px;
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-size: 0px;
+  height: 433.59375px;
   margin-right: 20px;
-
-}
-
-.card {
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  text-align: center;
+  vertical-align: top;
   width: 300px;
-  background-color: #fff;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 20px;
   text-align: center;
 }
 
 .card img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
-  margin-bottom: 10px;
+  border-radius: 10px;
+  margin-bottom: 50px;
 }
 
 .card h2 {
