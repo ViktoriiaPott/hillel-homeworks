@@ -9,30 +9,21 @@ body {
   text-align: center;
   padding: 30px;
   margin: 30px;
+  background-color: rgba(241, 156, 156, 0.041);
 }
 
-.row {
-  font-size: 0;
-  margin-bottom: 60px;
-}
-
-.row .card {
-  background-color: rgba(241, 221, 104, 0.493);
+.card {
+  background-color: rgba(223, 174, 174, 0.466);
   box-shadow: #29170281 0px 2px 5px 0px;
   color: rgb(0, 0, 0);
   display: inline-block;
   font-family: Arial, sans-serif;
-  font-size: 0px;
   height: 433.59375px;
-  margin-right: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
+  width: 300px;
+  padding: 20px;
   text-align: center;
   vertical-align: top;
-  width: 300px;
-  text-align: center;
+  margin: 20px; 
 }
 
 .card img {
@@ -49,5 +40,5 @@ body {
 
 .card p {
   font-size: 14px;
-  color: #777;
+  color: rgb(19, 1, 1);
 }
