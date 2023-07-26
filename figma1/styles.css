@@ -1,0 +1,57 @@
+/* Розділіть картки на 3 в рядок та 3 в стовпчик */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Відстань між рядками карток */
+  padding: 30px;
+  margin: 0 20px; /* Зовнішній відступ зліва та справа */
+}
+
+.row {
+  display: flex;
+  justify-content: center; /* Центрування карток в рядку */
+  width: 960px; /* Розділіть ряд на 3 колонки, по 300px кожна */
+  margin-left: 200px; /* Відступ від початку лівого краю екрана для першого стовпчика */
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+
+/* Відступи між картками в ряду */
+.row .card:not(:last-child) {
+  margin-right: 20px;
+
+}
+
+.card {
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #777;
+}
