@@ -3,12 +3,36 @@
   height: 700px;
   background-color: #EEEFF1;
 }
+
+@media screen and (max-width: 992px){
+    .navigation ul li a { font-size: 16px;}
+}
+@media screen and (max-width: 768px){
+    .navigation ul li a { font-size: 14px;}
+}
+@media screen and (max-width: 480px){
+    .navigation ul li a { font-size: 10px;}
+}
+  
+
 .header .container {
-  width: 1110px;
+  max-width: 1110px;
   margin: 0 auto;
   padding: 20px 0;
 }
 
+@media screen and (max-width: 992px){
+    .header-head{ font-size: 36px;}
+    .header-parg { font-size: 14px};
+}
+@media screen and (max-width: 768px){
+    .header-head{ font-size: 30px;}
+    .header-parg { font-size: 10px};
+}
+@media screen and (max-width: 480px){
+    .header-head{ font-size: 25px;};
+    .header-parg { font-size: 7px;};
+}
 .navigation ul li a {
   font-size: 16px;
   font-weight: 400;
@@ -31,14 +55,40 @@
   font-weight: 400px;
   color: #727272;
 }
+@media screen and (max-width: 992px){
+    .header-head{ font-size: 36px;}
+    .header-parg { font-size: 14px};
+}
+@media screen and (max-width: 768px){
+    .header-head{ font-size: 30px;}
+    .header-parg { font-size: 10px};
+}
+@media screen and (max-width: 480px){
+    .header-head{ font-size: 25px;};
+    .header-parg { font-size: 7px;};
+}
+
 .navigation {
   margin-left: -80px;
+}
+@media screen and (max-width: 992px){
+    .header-btn{ width: 180px; height: 50px;}
+}
+@media screen and (max-width: 768px){
+    .header-btn{ width: 140px; height: 40px;}
+}
+@media screen and (max-width: 480px){
+    .header-btn{ width: 100px; height: 30px;}
 }
 .header-btn {
    margin-top: 84px;
    width: 225px;
    height: 65px;
    background-color: #34547A;
+  transition: transform 0.3s ease;
+}
+.header-btn:hover {
+    transform: scale(1.1);
 }
 .button1 {
   
@@ -52,9 +102,21 @@
   background-color: #F9F9F9;
 }
 .header2 .container2 {
-  width: 1110px;
+   max-width: 1110px;
   margin: 0 auto;
  padding: 60px 0;
+}
+@media screen and (max-width: 992px){
+    .header2-head {font-size: 28px;}
+    .header2-parg {font-size: 14px;}
+}
+@media screen and (max-width: 768px){
+    .header2-head {font-size: 23px;}
+    .header2-parg {font-size: 11px;}
+}
+@media screen and (max-width: 480px){
+    .header2-head {font-size: 20px;}
+    .header2-parg {font-size: 8px;}
 }
 .header2-head {
   margin-top: 112px;
@@ -75,7 +137,7 @@
   background-color: #34547A;
 }
 .header3 .container3 {
-  width: 1110px;
+   max-width: 1110px;
   margin: 0 auto;
  padding: 100px 0;
  text-align: center;
@@ -98,14 +160,37 @@
 .im6 {
   margin-left: 40px;
 } 
+
+.im2:hover,
+.im3:hover,
+.im4:hover,
+.im5:hover,
+.im6:hover {
+    transform: rotate(360deg);
+    transition: transform 0.5s ease;
+}
+
+
 .header4 {
   height: 1005px;
   background-color: #F9F9F9;
 }
 .header4 .container4 {
-  width: 1110px;
+  max-width: 1110px;
   margin: 0 auto;
  padding: 60px 0;
+}
+@media screen and (max-width: 992px){
+    .header4-head {font-size: 28px;}
+    .header4-parg {font-size: 14px;}
+}
+@media screen and (max-width: 768px){
+    .header4-head {font-size: 23px;}
+    .header4-parg {font-size: 11px;}
+}
+@media screen and (max-width: 480px){
+    .header4-head {font-size: 20px;}
+    .header4-parg {font-size: 8px;}
 }
 .header4-head {
   margin-top: 112px;
@@ -125,6 +210,18 @@
   height: 151px; 
   background-color: #34547A;
 }
+@media screen and (max-width: 992px){
+    .header5-head {font-size: 18px;}
+    .header5-parg {font-size: 11px;}
+}
+@media screen and (max-width: 768px){
+    .header5-head {font-size: 15px;}
+    .header5-parg {font-size: 8px;}
+}
+@media screen and (max-width: 480px){
+    .header5-head {font-size: 11px;}
+    .header5-parg {font-size: 5px;}
+}
 .header5-head {
   margin-top: 112px;
   font-size: 21px;
@@ -137,10 +234,31 @@
   color: white;
 }
 .container5 {
-  width: 1110px;
+  max-width: 1110px;
   margin: 0 auto;
   padding: 50px 0;
+
 }
-.video {
-  margin-top: 80px;
+/* Мобільний розмір */
+@media screen and (max-width: 480px){
+    .header {
+        height: auto;
+        padding: 20px 0;
+        text-align: center;
+    }
+    .header .container {
+        padding: 10px 0;
+    }
+    .header-head {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .header-parg {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .navigation ul li {
+        display: block;
+        margin: 10px 0;
+    }
 }
