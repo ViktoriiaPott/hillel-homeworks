@@ -1,0 +1,7 @@
+@mixin rounded-corners($radius) {
+  border-radius: $radius;
+}
+
+@mixin box-shadow($x, $y, $blur, $color) {
+  box-shadow: $x $y $blur $color;
+}

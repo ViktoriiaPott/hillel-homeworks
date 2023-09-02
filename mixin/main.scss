@@ -1,0 +1,46 @@
+@import 'variables';
+@import 'mixins';
+
+.button {
+  background-color: $main-color;
+  color: white;
+  padding: $padding;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: darken($main-color, 10%);
+  }
+
+  &::after {
+    content: ' →';
+  }
+}
+
+.header {
+  background-color: #333;
+
+  .logo {
+    font-size: 24px;
+    color: #fff;
+  }
+
+  .nav {
+    ul {
+      list-style: none;
+
+      li {
+        margin: 5px 0;
+      }
+
+      a {
+        color: #fff;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
