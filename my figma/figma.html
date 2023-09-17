@@ -5,6 +5,7 @@
       rel="stylesheet prefetch"
       href="https://cdn.rawgit.com/mfd/e7842774e037edf15919037594a79b2b/raw/665bdfc532094318449f1010323c84013d5af953/graphik.css"
     />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./style.css" />
     <meta charset="UTF-8" />
@@ -12,119 +13,109 @@
     <title>Document</title>
   </head>
   <body>
-  <!-- Меню головне-->
-  <header class="header">
-    <section class="menu_section">
-      <div class="container">
-        <div class="main_header__inner">
-          <nav class="menu">
-            <img class="menu__logo" src="./gallery/lokalise1.png" alt="#" />
-            <a class="menu__link" href="#">Product</a>
-            <a class="menu__link" href="#">Features</a>
-            <a class="menu__link" href="#">Pricing</a>
-            <a class="menu__link" href="#">Case studies</a>
-            <a class="menu__link" href="#">Resources</a>
-          </nav>
-          <nav>
-
-            <!-- Кнопки на меню -->
-            <button class="button_white">
-              <a class="button_white_text" href="#">Log in</a>
-            </button>
-            <button class="button_orange">
-              <a class="button_orange_text" href="#">Try it free</a>
-            </button>
-          </nav>
-        </div>
-      </div>
-    </section>
-  </header>
-
-  <!-- Контейнер на основній сторінці -->
-    <div class="main-container">
-      <div class="main-wrapper section">
-        <div class="main">
-          <h1 class="main-section__header">
-            Accelerate localization from code to delivery
-          </h1>
-          <p class="main-section__paragraph">
-            A localization and translation management platform for agile teams.
-            Embrace automation, workflow transparency, and fast project
-            delivery.
-          </p>
-          <button class="button_orange">
-            <a
-              class="button_orange_text"
-              href="#"
-              >Try it free</a
-            >
-          </button>
-          <button class="button_white">
-            <a class="button_white_text" href="#">Book a demo</a>
-          </button>
-          <p class="main-section__under__buttom">
-            Try all features for 14 days · No credit card required
-          </p>
-        </div>
-        <div class="main-section-img">
-          <img src="./gallery/photo.png" alt=""class="main-section-img__picture" />
-        </div>
-      </div>
+ 
+  <!-- Меню головне з адаптивом -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="./gallery/lokalise1.png" alt="logo" class="navigation__link__logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Product</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Case studies</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Resources</a>
+            </li>
+        </ul>
+        <button class="btn btn-light mr-2">Log in</button>
+        <button class="btn btn-warning">Try it free</button>
     </div>
+</nav>
+
+
+  <!-- Адаптив Контейнер на основній сторінці -->
+  <div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-6">
+            <h1 class="display-4">Accelerate localization from code to delivery</h1>
+            <p class="lead">A localization and translation management platform for agile teams. Embrace automation, workflow transparency, and fast project delivery.</p>
+            <button class="btn btn-warning">Try it free</button>
+            <button class="btn btn-light ml-2">Book a demo</button>
+            <p class="mt-2">Try all features for 14 days · No credit card required</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="./gallery/photo.png" alt="" class="img-fluid">
+        </div>
+    </div>
+</div>
 
     <!-- Помаранчевий контейнер з компаніями -->
     <div class="companies-container">
-      <div class="companies section">
-        <h2 class="companies-section__paragraph">
-          The preferred localization <br />
-          tool of 1500+ companies
-        </h2>
-        <ul class="companies-section__list">
-          <li class="companies-section__list__item">
-            <img
-              class="companies-section__img"
-              src="./gallery/special.png"
-              alt=""
-            />
-          </li>
-          <li class="companies-section__list__item">
-            <img
-              class="companies-section__img"
-              src="./gallery/virgin.png"
-              alt=""
-            />
-          </li>
-          <li class="companies-section__list__item">
-            <img
-              class="companies-section__img"
-              src="./gallery/tidal.png"
-              alt=""
-            />
-          </li>
-          <li class="companies-section__list__item">
-            <img
-              class="companies-section__img"
-              src="./gallery/revolut.png"
-              alt=""
-            />
-          </li>
-          <li class="companies-section__list__item">
-            <img
-              class="companies-section__img"
-              src="./gallery/yelp.png"
-              alt=""
-            />
-          </li>
-          <li class="companies-section__list__item">
-            <img
-              class="companies-section__img"
-              src="./gallery/daimler.png"
-              alt=""
-            />
-          </li>
-        </ul>
+        <div class="companies section">
+          <h2 class="companies-section__paragraph">
+            The preferred localization <br />
+            tool of 1500+ companies
+          </h2>
+          <ul class="companies-section__list">
+            <li class="companies-section__list__item">
+              <img
+                class="companies-section__img"
+                src="./gallery/special.png"
+                alt=""
+              />
+            </li>
+            <li class="companies-section__list__item">
+              <img
+                class="companies-section__img"
+                src="./gallery/virgin.png"
+                alt=""
+              />
+            </li>
+            <li class="companies-section__list__item">
+              <img
+                class="companies-section__img"
+                src="./gallery/tidal.png"
+                alt=""
+              />
+            </li>
+            <li class="companies-section__list__item">
+              <img
+                class="companies-section__img"
+                src="./gallery/revolut.png"
+                alt=""
+              />
+            </li>
+            <li class="companies-section__list__item">
+              <img
+                class="companies-section__img"
+                src="./gallery/yelp.png"
+                alt=""
+              />
+            </li>
+            <li class="companies-section__list__item">
+              <img
+                class="companies-section__img"
+                src="./gallery/daimler.png"
+                alt=""
+              />
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+
 
     <!-- Фішки -->
 
