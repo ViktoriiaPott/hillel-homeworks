@@ -1,0 +1,69 @@
+  /* Загальні стилі */
+  body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    color: #000000;
+}
+
+
+  /* Слайдер (Карусель) */
+  .carousel {
+    background-color: #bbbbb8;
+    border-radius: 10px;
+}
+
+.carousel-inner {
+    border-radius: 10px;
+}
+
+.carousel-item {
+    text-align: center;
+    padding: 50px;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Декілька карток */
+.card {
+    background-color: #c1c6ac;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.card-title {
+    color: #f5f5f7;
+}
+
+/* Форма */
+.form-group label {
+    color: #c1c6ac;
+}
+
+ /* Рамка для форми */
+ .custom-border {
+    border: 2px solid #c1c6ac;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Змінена кнопка */
+.cool-button {
+    background-color: #c1c6ac;
+    color: #f5f5f7;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cool-button:hover {
+    background-color: #a73c8c;
+}

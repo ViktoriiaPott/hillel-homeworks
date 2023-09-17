@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlK3jbT9h4Ih6fZ6P0Lc5Bj2Pq1z7WZ5NpFez9bCoUqoc/7O5KAUhFhj2+4q3U6m" crossorigin="anonymous">
+    <title>Bootstrap Page</title>
+</head>
+<body>
+<!-- Навігація -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Моя сторінка</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav" style="flex-direction: row;"> <!-- Додайте стиль для flex-direction: row; -->
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Головна <span class="sr-only">(поточна)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Про нас</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Контакти</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+    <!-- Слайдер (Карусель) -->
+    <div id="myCarousel" class="carousel slide mt-4" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <!-- Змініть шлях до своєї картинки тут та встановіть нові розміри -->
+                <img src="gallery/Снимок экрана 2023-09-17 в 08.25.03.png/" alt="Слайд 1">
+            </div>
+            <div class="carousel-item">
+                <!-- Змініть шлях до своєї картинки тут та встановіть нові розміри -->
+                <img src="gallery/Снимок экрана 2023-09-17 в 08.25.50.png/" alt="Слайд 2">
+            </div>
+            <div class="carousel-item">
+                <!-- Змініть шлях до своєї картинки тут та встановіть нові розміри -->
+                <img src="gallery/Снимок экрана 2023-09-17 в 08.25.14.png/" alt="Слайд 3">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Попередній</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Наступний</span>
+        </a>
+    </div>
+
+    <!-- Декілька карток -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="gallery/Снимок экрана 2023-09-17 в 08.50.17.png/" class="card-img-top mx-auto" alt="Картка 1">
+                    <div class="card-body">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="gallery/Снимок экрана 2023-09-17 в 08.50.07.png/" class="card-img-top mx-auto" alt="Картка 2">
+                    <div class="card-body">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="gallery/Снимок экрана 2023-09-17 в 08.49.56.png/" class="card-img-top mx-auto" alt="Картка 3">
+                    <div class="card-body">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Форма -->
+    <div class="container mt-4 custom-border">
+        <h2>Зв'яжіться з нами</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Ім'я</label>
+                <input type="text" class="form-control" id="name" placeholder="Ваше ім'я">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Ваш Email">
+            </div>
+            <div class="form-group">
+                <label for="message">Повідомлення</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Ваше повідомлення"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Відправити</button>
+        </form>
+    </div>
+
+    <!-- Адаптив-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-Pzjw8f+uaZ2Kw1TIq0v7LkCz4zfu5HDt7kpmaMlA9ixlTq5F5uk7klE+8aJU5sRjE" crossorigin="anonymous"></script>
+</body>
+</html>
